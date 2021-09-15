@@ -50,8 +50,13 @@
   color: $dark-grey;
   display: flex;
   margin-bottom: 10px;
-  overflow: hidden;
   margin-right: 0.5em;
+  overflow: hidden;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: lighten($color: $primary, $amount: 15);
+  }
 }
 
 .journal__entries::-webkit-scrollbar {
